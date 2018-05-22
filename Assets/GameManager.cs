@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour {
             singleton = this;
 	}
 
+	private void Start()
+	{
+		
+	}
+
 	private void Update()
 	{
         m_Counter.text = "points : " + m_Points;
@@ -49,5 +54,20 @@ public class GameManager : MonoBehaviour {
             m_SoccerballHit.Play();
         if (prefab.name.Contains("basketball"))
             m_BasketballSwish.Play();
+    }
+
+    public Text v_TomBradyPriceText;
+    public float v_TomBradyPrice = 10;
+    public float v_TomBradyRate = 1;
+
+    public void BuyTomBrady(){
+        if(m_Points >= v_TomBradyPrice){
+            v_TomBradyPrice += 10;
+            v_TomBradyPriceText.text = "Price : " + v_TomBradyPrice;
+        }
+    }
+
+    public void InvokeEarning(){
+        
     }
 }
