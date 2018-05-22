@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
     public float m_Points;
     public Text m_Counter;
 
+    public List<GameObject> m_Icons;
+
 	private void Awake()
 	{
         if (singleton != null)
@@ -24,5 +26,12 @@ public class GameManager : MonoBehaviour {
 
 	public void AddPoint(){
         m_Points++;
+        SpawnRandomIcon();
+    }
+
+    public void SpawnRandomIcon(){
+        int index = Random.Range(0, m_Icons.Count);
+        Vector3 randomPos = new Vector3(0,0,0);
+        Instantiate(m_Icons[index], randomPos, Quaternion.identity);
     }
 }
