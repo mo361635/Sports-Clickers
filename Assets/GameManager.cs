@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 
     public void SpawnRandomIcon(){
         int index = Random.Range(0, m_Icons.Count);
-        Vector3 randomPos = new Vector3(0,0,0);
+        Vector3 randomPos = new Vector3(Random.Range(-7f,7f), Random.Range(-4f,4f),0);
         Instantiate(m_Icons[index], randomPos, Quaternion.identity);
     }
 }
