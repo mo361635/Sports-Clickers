@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
 
 	private void Update()
 	{
-        m_Counter.text = m_Points.ToString();
+        m_Counter.text = "points : " + m_Points;
 	}
 
 	public void AddPoint(){
