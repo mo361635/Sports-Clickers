@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour {
 			v_CamNewtonLevelText.text = "Level : " + v_CamNewtonLevel;
 		}
 	}
-
+		
 	public Text v_DakPrescottPriceText;
 	public Text v_DakPrescottLevelText;
 	public float v_DakPrescottLevel;
@@ -120,6 +120,7 @@ public class GameManager : MonoBehaviour {
 			v_DakPrescottLevelText.text = "Level : " + v_DakPrescottLevel;
 		}
 	}
+
     public Text v_TigerWoodsPriceText;
     public Text v_TigerWoodsLevelText;
     public float v_TigerWoodsLevel;
@@ -157,6 +158,26 @@ public class GameManager : MonoBehaviour {
             v_JordanSpiethLevelText.text = "Level : " + v_JordanSpiethLevel;
         }
     }
+
+    public Text v_PhilMicklesonPriceText;
+    public Text v_PhilMicklesonLevelText;
+    public float v_PhilMicklesonLevel;
+    public float v_PhilMicklesonPrice = 10;
+    public int v_PhilMicklesonRate = 0;
+
+    public void BuyPhilMickleson()
+    {
+        if (m_Points >= v_PhilMicklesonPrice)
+        {
+            m_Points -= v_PhilMicklesonPrice;
+            v_PhilMicklesonPrice += 10;
+            v_PhilMicklesonLevel++;
+            v_PhilMicklesonRate++;
+            v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+            v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+        }
+    }
+
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
