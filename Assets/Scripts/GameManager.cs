@@ -178,6 +178,176 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
+
+	public Text v_PhilMicklesonPriceText;
+	public Text v_PhilMicklesonLevelText;
+	public float v_PhilMicklesonLevel;
+	public float v_PhilMicklesonPrice = 10;
+	public int v_PhilMicklesonRate = 0;
+
+	public void BuyPhilMickleson()
+	{
+		if (m_Points >= v_PhilMicklesonPrice)
+		{
+			m_Points -= v_PhilMicklesonPrice;
+			v_PhilMicklesonPrice += 10;
+			v_PhilMicklesonLevel++;
+			v_PhilMicklesonRate++;
+			v_PhilMicklesonPriceText.text = "Price : " + v_PhilMicklesonPrice;
+			v_PhilMicklesonLevelText.text = "Level : " + v_PhilMicklesonLevel;
+		}
+	}
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
