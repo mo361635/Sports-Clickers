@@ -103,6 +103,23 @@ public class GameManager : MonoBehaviour {
 			v_CamNewtonLevelText.text = "Level : " + v_CamNewtonLevel;
 		}
 	}
+
+	public Text v_DakPrescottPriceText;
+	public Text v_DakPrescottLevelText;
+	public float v_DakPrescottLevel;
+	public float v_DakPrescottPrice = 10;
+	public int v_DakPrescottRate = 0;
+
+	public void DakPrescott(){
+		if(m_Points >= v_DakPrescottPrice){
+			m_Points -= v_DakPrescottPrice;
+			v_DakPrescottPrice += 10;
+			v_DakPrescottLevel++;
+			v_DakPrescottRate++;
+			v_DakPrescottPriceText.text = "Price : " + v_DakPrescottPrice;
+			v_DakPrescottLevelText.text = "Level : " + v_DakPrescottLevel;
+		}
+	}
     public Text v_TigerWoodsPriceText;
     public Text v_TigerWoodsLevelText;
     public float v_TigerWoodsLevel;
