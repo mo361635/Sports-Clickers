@@ -87,10 +87,50 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public Text v_TigerWoodsPriceText;
+    public Text v_TigerWoodsLevelText;
+    public float v_TigerWoodsLevel;
+    public float v_TigerWoodsPrice = 10;
+    public int v_TigerWoodsRate = 0;
+
+    public void BuyTigerWoods()
+    {
+        if (m_Points >= v_TigerWoodsPrice)
+        {
+            m_Points -= v_TigerWoodsPrice;
+            v_TigerWoodsPrice += 10;
+            v_TigerWoodsLevel++;
+            v_TigerWoodsRate++;
+            v_TigerWoodsPriceText.text = "Price : " + v_TigerWoodsPrice;
+            v_TigerWoodsLevelText.text = "Level : " + v_TigerWoodsLevel;
+        }
+    }
+
+    public Text v_JordanSpiethPriceText;
+    public Text v_JordanSpiethLevelText;
+    public float v_JordanSpiethLevel;
+    public float v_JordanSpiethPrice = 10;
+    public int v_JordanSpiethRate = 0;
+
+    public void BuyJordanSpieth()
+    {
+        if (m_Points >= v_JordanSpiethPrice)
+        {
+            m_Points -= v_JordanSpiethPrice;
+            v_JordanSpiethPrice += 10;
+            v_JordanSpiethLevel++;
+            v_JordanSpiethRate++;
+            v_JordanSpiethPriceText.text = "Price : " + v_JordanSpiethPrice;
+            v_JordanSpiethLevelText.text = "Level : " + v_JordanSpiethLevel;
+        }
+    }
+
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
             points += v_TomBradyRate;
+            points += v_TigerWoodsRate;
+            points += v_JordanSpiethRate;
             m_Points += points;
             yield return new WaitForSeconds(1f);
         }
@@ -104,9 +144,10 @@ public class GameManager : MonoBehaviour {
             m_BasketballMenu.SetActive(false);
             m_SoccerMenu.SetActive(false);
             m_BaseballMenu.SetActive(false);
+            m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
         }else{
             m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
-        }
+        }   
     }
 
     public void OpenFootballMenu(){
