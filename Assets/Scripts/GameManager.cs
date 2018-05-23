@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
 	public Text v_CamNewtonPriceText;
 	public Text v_CamNewtonLevelText;
 	public float v_CamNewtonLevel;
@@ -103,12 +104,56 @@ public class GameManager : MonoBehaviour {
 			v_CamNewtonLevelText.text = "Level : " + v_CamNewtonLevel;
 		}
 	}
+=======
+    public Text v_TigerWoodsPriceText;
+    public Text v_TigerWoodsLevelText;
+    public float v_TigerWoodsLevel;
+    public float v_TigerWoodsPrice = 10;
+    public int v_TigerWoodsRate = 0;
+
+    public void BuyTigerWoods()
+    {
+        if (m_Points >= v_TigerWoodsPrice)
+        {
+            m_Points -= v_TigerWoodsPrice;
+            v_TigerWoodsPrice += 10;
+            v_TigerWoodsLevel++;
+            v_TigerWoodsRate++;
+            v_TigerWoodsPriceText.text = "Price : " + v_TigerWoodsPrice;
+            v_TigerWoodsLevelText.text = "Level : " + v_TigerWoodsLevel;
+        }
+    }
+
+    public Text v_JordanSpiethPriceText;
+    public Text v_JordanSpiethLevelText;
+    public float v_JordanSpiethLevel;
+    public float v_JordanSpiethPrice = 10;
+    public int v_JordanSpiethRate = 0;
+
+    public void BuyJordanSpieth()
+    {
+        if (m_Points >= v_JordanSpiethPrice)
+        {
+            m_Points -= v_JordanSpiethPrice;
+            v_JordanSpiethPrice += 10;
+            v_JordanSpiethLevel++;
+            v_JordanSpiethRate++;
+            v_JordanSpiethPriceText.text = "Price : " + v_JordanSpiethPrice;
+            v_JordanSpiethLevelText.text = "Level : " + v_JordanSpiethLevel;
+        }
+    }
+>>>>>>> ff50a2be09b6fe31fe82d4d508653e5f39016d9a
 
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
             points += v_TomBradyRate;
+<<<<<<< HEAD
 			points += v_CamNewtonRate;
+=======
+            points += v_TigerWoodsRate;
+            points += v_JordanSpiethRate;
+>>>>>>> ff50a2be09b6fe31fe82d4d508653e5f39016d9a
             m_Points += points;
             yield return new WaitForSeconds(1f);
         }
@@ -122,9 +167,10 @@ public class GameManager : MonoBehaviour {
             m_BasketballMenu.SetActive(false);
             m_SoccerMenu.SetActive(false);
             m_BaseballMenu.SetActive(false);
+            m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
         }else{
             m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
-        }
+        }   
     }
 
     public void OpenFootballMenu(){
