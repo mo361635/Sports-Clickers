@@ -3658,7 +3658,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyAlexRodriguez
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10328,16 +10328,16 @@ MonoBehaviour:
   v_JoshHamiltonLevel: 0
   v_JoshHamiltonPrice: 10
   v_JoshHamiltonRate: 0
-  v_BichiroSuzukiPriceText: {fileID: 0}
-  v_BichiroSuzukiLevelText: {fileID: 0}
-  v_BichiroSuzukiLevel: 0
-  v_BichiroSuzukiPrice: 10
-  v_BichiroSuzukiRate: 0
-  v_BalexRodriguezPriceText: {fileID: 0}
-  v_BalexRodriguezLevelText: {fileID: 0}
-  v_BalexRodriguezLevel: 0
-  v_BalexRodriguezPrice: 10
-  v_BalexRodriguezRate: 0
+  v_IchiroSuzukiPriceText: {fileID: 0}
+  v_IchiroSuzukiLevelText: {fileID: 0}
+  v_IchiroSuzukiLevel: 0
+  v_IchiroSuzukiPrice: 10
+  v_IchiroSuzukiRate: 0
+  v_AlexRodriguezPriceText: {fileID: 0}
+  v_AlexRodriguezLevelText: {fileID: 0}
+  v_AlexRodriguezLevel: 0
+  v_AlexRodriguezPrice: 10
+  v_AlexRodriguezRate: 0
   v_StephCurryPriceText: {fileID: 0}
   v_StephCurryLevelText: {fileID: 0}
   v_StephCurryLevel: 0
