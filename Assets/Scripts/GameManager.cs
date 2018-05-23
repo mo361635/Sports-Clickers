@@ -87,10 +87,28 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+	public Text v_CamNewtonPriceText;
+	public Text v_CamNewtonLevelText;
+	public float v_CamNewtonLevel;
+	public float v_CamNewtonPrice = 10;
+	public int v_CamNewtonRate = 0;
+
+	public void BuyCamNewton(){
+		if(m_Points >= v_CamNewtonPrice){
+			m_Points -= v_CamNewtonPrice;
+			v_CamNewtonPrice += 10;
+			v_CamNewtonLevel++;
+			v_CamNewtonRate++;
+			v_CamNewtonPriceText.text = "Price : " + v_CamNewtonPrice;
+			v_CamNewtonLevelText.text = "Level : " + v_CamNewtonLevel;
+		}
+	}
+
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
             points += v_TomBradyRate;
+			points += v_CamNewtonRate;
             m_Points += points;
             yield return new WaitForSeconds(1f);
         }
