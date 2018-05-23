@@ -178,41 +178,41 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-	public Text v_BichiroSuzukiPriceText;
-    public Text v_BichiroSuzukiLevelText;
-    public float v_BichiroSuzukiLevel;
-    public float v_BichiroSuzukiPrice = 10;
-    public int v_BichiroSuzukiRate = 0;
+	public Text v_IchiroSuzukiPriceText;
+	public Text v_IchiroSuzukiLevelText;
+	public float v_IchiroSuzukiLevel;
+	public float v_IchiroSuzukiPrice = 10;
+	public int v_IchiroSuzukiRate = 0;
 
-    public void BuyBichiroSuzuki()
+	public void IchiroSuzuki()
 	{
-        if (m_Points >= v_BichiroSuzukiPrice)
+		if (m_Points >= v_IchiroSuzukiPrice)
 		{
-            m_Points -= v_BichiroSuzukiPrice;
-            v_BichiroSuzukiPrice += 10;
-            v_BichiroSuzukiLevel++;
-            v_BichiroSuzukiRate++;
-            v_BichiroSuzukiPriceText.text = "Price : " + v_BichiroSuzukiPrice;
-            v_BichiroSuzukiLevelText.text = "Level : " + v_BichiroSuzukiLevel;
+			m_Points -= v_IchiroSuzukiPrice;
+			v_IchiroSuzukiPrice += 10;
+			v_IchiroSuzukiLevel++;
+			v_IchiroSuzukiRate++;
+			v_IchiroSuzukiPriceText.text = "Price : " + v_IchiroSuzukiPrice;
+			v_IchiroSuzukiLevelText.text = "Level : " + v_IchiroSuzukiLevel;
 		}
 	}
 
-	public Text v_BalexRodriguezPriceText;
-    public Text v_BalexRodriguezLevelText;
-    public float v_BalexRodriguezLevel;
-    public float v_BalexRodriguezPrice = 10;
-    public int v_BalexRodriguezRate = 0;
+	public Text v_AlexRodriguezPriceText;
+	public Text v_AlexRodriguezLevelText;
+	public float v_AlexRodriguezLevel;
+	public float v_AlexRodriguezPrice = 10;
+	public int v_AlexRodriguezRate = 0;
 
-    public void BuyBalexRodriguez()
+	public void BuyAlexRodriguez()
 	{
-        if (m_Points >= v_BalexRodriguezPrice)
+		if (m_Points >= v_AlexRodriguezPrice)
 		{
-            m_Points -= v_BalexRodriguezPrice;
-            v_BalexRodriguezPrice += 10;
-            v_BalexRodriguezLevel++;
-            v_BalexRodriguezRate++;
-            v_BalexRodriguezPriceText.text = "Price : " + v_BalexRodriguezPrice;
-            v_BalexRodriguezLevelText.text = "Level : " + v_BalexRodriguezLevel;
+			m_Points -= v_AlexRodriguezPrice;
+			v_AlexRodriguezPrice += 10;
+			v_AlexRodriguezLevel++;
+			v_AlexRodriguezRate++;
+			v_AlexRodriguezPriceText.text = "Price : " + v_AlexRodriguezPrice;
+			v_AlexRodriguezLevelText.text = "Level : " + v_AlexRodriguezLevel;
 		}
 	}
 
