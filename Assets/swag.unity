@@ -1318,7 +1318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &383413847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2908,7 +2908,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -519, y: 55}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &786591380
 MonoBehaviour:
@@ -3081,7 +3081,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3828,10 +3828,10 @@ RectTransform:
   m_Father: {fileID: 1752905809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 448.8}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 351.5, y: -224.4}
+  m_SizeDelta: {x: 703, y: 448.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118584783
 MonoBehaviour:
@@ -4258,7 +4258,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -7.31}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 328, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1240067671
 MonoBehaviour:
@@ -4868,9 +4868,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1439718709
 MonoBehaviour:
@@ -5123,9 +5123,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1540004672
 MonoBehaviour:
@@ -5165,8 +5165,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1566448051}
   m_HandleRect: {fileID: 1566448050}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5529,7 +5529,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6137,8 +6137,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000142442705, y: 0.00003003501}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000026942074}
+  m_SizeDelta: {x: 0, y: 448.8}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1752905810
 MonoBehaviour:
@@ -6314,6 +6314,16 @@ MonoBehaviour:
   v_TomBradyLevel: 0
   v_TomBradyPrice: 10
   v_TomBradyRate: 0
+  v_CamNewtonPriceText: {fileID: 0}
+  v_CamNewtonLevelText: {fileID: 0}
+  v_CamNewtonLevel: 0
+  v_CamNewtonPrice: 10
+  v_CamNewtonRate: 0
+  v_DakPrescottPriceText: {fileID: 0}
+  v_DakPrescottLevelText: {fileID: 0}
+  v_DakPrescottLevel: 0
+  v_DakPrescottPrice: 10
+  v_DakPrescottRate: 0
   v_TigerWoodsPriceText: {fileID: 0}
   v_TigerWoodsLevelText: {fileID: 0}
   v_TigerWoodsLevel: 0
@@ -6324,6 +6334,51 @@ MonoBehaviour:
   v_JordanSpiethLevel: 0
   v_JordanSpiethPrice: 10
   v_JordanSpiethRate: 0
+  v_JoshHamiltonPriceText: {fileID: 0}
+  v_JoshHamiltonLevelText: {fileID: 0}
+  v_JoshHamiltonLevel: 0
+  v_JoshHamiltonPrice: 10
+  v_JoshHamiltonRate: 0
+  v_BichiroSuzukiPriceText: {fileID: 0}
+  v_BichiroSuzukiLevelText: {fileID: 0}
+  v_BichiroSuzukiLevel: 0
+  v_BichiroSuzukiPrice: 10
+  v_BichiroSuzukiRate: 0
+  v_BalexRodriguezPriceText: {fileID: 0}
+  v_BalexRodriguezLevelText: {fileID: 0}
+  v_BalexRodriguezLevel: 0
+  v_BalexRodriguezPrice: 10
+  v_BalexRodriguezRate: 0
+  v_StephCurryPriceText: {fileID: 0}
+  v_StephCurryLevelText: {fileID: 0}
+  v_StephCurryLevel: 0
+  v_StephCurryPrice: 10
+  v_StephCurryRate: 0
+  v_JamesHardenPriceText: {fileID: 0}
+  v_JamesHardenLevelText: {fileID: 0}
+  v_JamesHardenLevel: 0
+  v_JamesHardenPrice: 10
+  v_JamesHardenRate: 0
+  v_DirkNowitzskiPriceText: {fileID: 0}
+  v_DirkNowitzskiLevelText: {fileID: 0}
+  v_DirkNowitzskiLevel: 0
+  v_DirkNowitzskiPrice: 10
+  v_DirkNowitzskiRate: 0
+  v_ChristianRonaldoPriceText: {fileID: 0}
+  v_ChristianRonaldoLevelText: {fileID: 0}
+  v_ChristianRonaldoLevel: 0
+  v_ChristianRonaldoPrice: 10
+  v_ChristianRonaldoRate: 0
+  v_LionelMessiPriceText: {fileID: 0}
+  v_LionelMessiLevelText: {fileID: 0}
+  v_LionelMessiLevel: 0
+  v_LionelMessiPrice: 10
+  v_LionelMessiRate: 0
+  v_NeyMarPriceText: {fileID: 0}
+  v_NeyMarLevelText: {fileID: 0}
+  v_NeyMarLevel: 0
+  v_NeyMarPrice: 10
+  v_NeyMarRate: 0
 --- !u!4 &1858460463
 Transform:
   m_ObjectHideFlags: 0
@@ -7186,7 +7241,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 118, y: 35}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 236, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1933512245
 MonoBehaviour:
@@ -8357,9 +8412,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 20}
+  m_SizeDelta: {x: -17, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2091088372
 MonoBehaviour:
@@ -8400,7 +8455,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 795009336}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
