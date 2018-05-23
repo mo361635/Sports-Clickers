@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour {
 	public float v_DakPrescottPrice = 10;
 	public int v_DakPrescottRate = 0;
 
-	public void DakPrescott(){
+	public void BuyDakPrescott(){
 		if(m_Points >= v_DakPrescottPrice){
 			m_Points -= v_DakPrescottPrice;
 			v_DakPrescottPrice += 10;
@@ -159,6 +159,25 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+	public Text v_PhilMickelsonPriceText;
+	public Text v_PhilMickelsonLevelText;
+	public float v_PhilMickelsonLevel;
+	public float v_PhilMickelsonPrice = 10;
+	public int v_PhilMickelsonRate = 0;
+
+	public void BuyPhilMickelson()
+	{
+		if (m_Points >= v_PhilMickelsonPrice)
+		{
+			m_Points -= v_PhilMickelsonPrice;
+			v_PhilMickelsonPrice += 10;
+			v_PhilMickelsonLevel++;
+			v_PhilMickelsonRate++;
+			v_PhilMickelsonPriceText.text = "Price : " + v_PhilMickelsonPrice;
+			v_PhilMickelsonLevelText.text = "Level : " + v_PhilMickelsonLevel;
+		}
+	}
+
     public Text v_JoshHamiltonPriceText;
     public Text v_JoshHamiltonLevelText;
     public float v_JoshHamiltonLevel;
@@ -184,7 +203,7 @@ public class GameManager : MonoBehaviour {
 	public float v_IchiroSuzukiPrice = 10;
 	public int v_IchiroSuzukiRate = 0;
 
-	public void IchiroSuzuki()
+	public void BuyIchiroSuzuki()
 	{
 		if (m_Points >= v_IchiroSuzukiPrice)
 		{
@@ -311,22 +330,22 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-    public Text v_NeyMarPriceText;
-    public Text v_NeyMarLevelText;
-    public float v_NeyMarLevel;
-    public float v_NeyMarPrice = 10;
-    public int v_NeyMarRate = 0;
+    public Text v_NeymarPriceText;
+    public Text v_NeymarLevelText;
+    public float v_NeymarLevel;
+    public float v_NeymarPrice = 10;
+    public int v_NeymarRate = 0;
 
-	public void BuyNeyMar()
+	public void BuyNeymar()
 	{
-        if (m_Points >= v_NeyMarPrice)
+        if (m_Points >= v_NeymarPrice)
 		{
-            m_Points -= v_NeyMarPrice;
-            v_NeyMarPrice += 10;
-            v_NeyMarLevel++;
-            v_NeyMarRate++;
-            v_NeyMarPriceText.text = "Price : " + v_NeyMarPrice;
-            v_NeyMarLevelText.text = "Level : " + v_NeyMarLevel;
+            m_Points -= v_NeymarPrice;
+            v_NeymarPrice += 10;
+            v_NeymarLevel++;
+            v_NeymarRate++;
+            v_NeymarPriceText.text = "Price : " + v_NeymarPrice;
+            v_NeymarLevelText.text = "Level : " + v_NeymarLevel;
 		}
 	}
 

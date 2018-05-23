@@ -193,7 +193,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyLionelMessi
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2161,7 +2161,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyDirkNowitzski
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3783,7 +3783,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyJoshHamilton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4403,7 +4403,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyPhilMickelson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5332,7 +5332,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyChristianRonaldo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5457,7 +5457,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyNeymar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6399,7 +6399,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyDakPrescott
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6524,7 +6524,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyTigerWoods
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7429,7 +7429,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyIchiroSuzuki
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8884,7 +8884,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyJordanSpieth
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10323,6 +10323,11 @@ MonoBehaviour:
   v_JordanSpiethLevel: 0
   v_JordanSpiethPrice: 10
   v_JordanSpiethRate: 0
+  v_PhilMickelsonPriceText: {fileID: 0}
+  v_PhilMickelsonLevelText: {fileID: 0}
+  v_PhilMickelsonLevel: 0
+  v_PhilMickelsonPrice: 10
+  v_PhilMickelsonRate: 0
   v_JoshHamiltonPriceText: {fileID: 0}
   v_JoshHamiltonLevelText: {fileID: 0}
   v_JoshHamiltonLevel: 0
@@ -10363,11 +10368,11 @@ MonoBehaviour:
   v_LionelMessiLevel: 0
   v_LionelMessiPrice: 10
   v_LionelMessiRate: 0
-  v_NeyMarPriceText: {fileID: 0}
-  v_NeyMarLevelText: {fileID: 0}
-  v_NeyMarLevel: 0
-  v_NeyMarPrice: 10
-  v_NeyMarRate: 0
+  v_NeymarPriceText: {fileID: 0}
+  v_NeymarLevelText: {fileID: 0}
+  v_NeymarLevel: 0
+  v_NeymarPrice: 10
+  v_NeymarRate: 0
 --- !u!4 &1858460463
 Transform:
   m_ObjectHideFlags: 0
@@ -11818,7 +11823,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyStephCurry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12556,7 +12561,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858460462}
-        m_MethodName: BuyTomBrady
+        m_MethodName: BuyJamesHarden
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
