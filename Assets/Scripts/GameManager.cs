@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour {
     public GameObject m_SoccerMenu;
     public GameObject m_BaseballMenu;
 
+    public GameObject m_YouWinScreen;
+    public GameObject m_TitleScreen;
 	private void Awake()
 	{
         if (singleton != null)
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour {
         m_BasketballMenu.SetActive(false);
         m_SoccerMenu.SetActive(false);
         m_BaseballMenu.SetActive(false);
+        m_YouWinScreen.SetActive(false);
 	}
 
 	private void Start()
@@ -48,6 +52,9 @@ public class GameManager : MonoBehaviour {
 	private void Update()
 	{
         m_Counter.text = "points : " + m_Points;
+        if(m_Points >= 100){
+            m_YouWinScreen.SetActive(true);
+        }
 	}
 
 	public void AddPoint(){
@@ -426,5 +433,13 @@ public class GameManager : MonoBehaviour {
         m_BaseballMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
         OpenCloseShopButton.text = "Back";
+    }
+
+    public void Replay(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void StartGame(){
+        m_TitleScreen.SetActive(false);
     }
 }
