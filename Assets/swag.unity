@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 324934065}
   - component: {fileID: 324934064}
   m_Layer: 5
-  m_Name: Points
+  m_Name: Counter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,7 +2326,7 @@ RectTransform:
   - {fileID: 2091088371}
   - {fileID: 1540004671}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2570,7 +2570,7 @@ RectTransform:
   m_Children:
   - {fileID: 1999566717}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5816,6 +5816,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022609390}
+--- !u!1 &1050301723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1050301724}
+  - component: {fileID: 1050301726}
+  - component: {fileID: 1050301725}
+  m_Layer: 5
+  m_Name: Sombrero
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1050301724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050301723}
+  m_LocalRotation: {x: -0, y: -0, z: -0.25881857, w: 0.965926}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1568519025}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.000002}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 487, y: 159}
+  m_SizeDelta: {x: 250, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1050301725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050301723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 8b01f4460dd964e40ac47444ef91ac7f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1050301726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050301723}
 --- !u!1 &1052933389
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,7 +6126,7 @@ RectTransform:
   - {fileID: 1872521067}
   - {fileID: 1120273398}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -7892,7 +7960,7 @@ RectTransform:
   - {fileID: 2034166502}
   - {fileID: 353135181}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -8694,7 +8762,7 @@ GameObject:
   - component: {fileID: 1560858698}
   - component: {fileID: 1560858697}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PointMaker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9260,6 +9328,7 @@ RectTransform:
   m_Children:
   - {fileID: 324934063}
   - {fileID: 1560858696}
+  - {fileID: 1050301724}
   - {fileID: 2047071793}
   - {fileID: 424267861}
   - {fileID: 2104650525}
@@ -10281,6 +10350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Points: 0
   m_Counter: {fileID: 324934065}
+  OpenCloseShopButton: {fileID: 1999566718}
   m_Icons:
   - {fileID: 1417540675569234, guid: 67496400b803c45cd8ea0118ce073f08, type: 2}
   - {fileID: 1827598578243134, guid: e329f2110dfd14f73b483901caac7bd2, type: 2}
@@ -10303,73 +10373,73 @@ MonoBehaviour:
   v_TomBradyLevel: 0
   v_TomBradyPrice: 10
   v_TomBradyRate: 0
-  v_CamNewtonPriceText: {fileID: 0}
-  v_CamNewtonLevelText: {fileID: 0}
+  v_CamNewtonPriceText: {fileID: 176834076}
+  v_CamNewtonLevelText: {fileID: 1097539845}
   v_CamNewtonLevel: 0
   v_CamNewtonPrice: 10
   v_CamNewtonRate: 0
-  v_DakPrescottPriceText: {fileID: 0}
-  v_DakPrescottLevelText: {fileID: 0}
+  v_DakPrescottPriceText: {fileID: 1241450578}
+  v_DakPrescottLevelText: {fileID: 342606525}
   v_DakPrescottLevel: 0
   v_DakPrescottPrice: 10
   v_DakPrescottRate: 0
-  v_TigerWoodsPriceText: {fileID: 0}
-  v_TigerWoodsLevelText: {fileID: 0}
+  v_TigerWoodsPriceText: {fileID: 786591381}
+  v_TigerWoodsLevelText: {fileID: 1933512246}
   v_TigerWoodsLevel: 0
   v_TigerWoodsPrice: 10
   v_TigerWoodsRate: 0
-  v_JordanSpiethPriceText: {fileID: 0}
-  v_JordanSpiethLevelText: {fileID: 0}
+  v_JordanSpiethPriceText: {fileID: 1446302317}
+  v_JordanSpiethLevelText: {fileID: 473914654}
   v_JordanSpiethLevel: 0
   v_JordanSpiethPrice: 10
   v_JordanSpiethRate: 0
-  v_PhilMickelsonPriceText: {fileID: 0}
-  v_PhilMickelsonLevelText: {fileID: 0}
+  v_PhilMickelsonPriceText: {fileID: 762025525}
+  v_PhilMickelsonLevelText: {fileID: 1201724530}
   v_PhilMickelsonLevel: 0
   v_PhilMickelsonPrice: 10
   v_PhilMickelsonRate: 0
-  v_JoshHamiltonPriceText: {fileID: 0}
-  v_JoshHamiltonLevelText: {fileID: 0}
+  v_JoshHamiltonPriceText: {fileID: 373156844}
+  v_JoshHamiltonLevelText: {fileID: 1966165178}
   v_JoshHamiltonLevel: 0
   v_JoshHamiltonPrice: 10
   v_JoshHamiltonRate: 0
-  v_IchiroSuzukiPriceText: {fileID: 0}
-  v_IchiroSuzukiLevelText: {fileID: 0}
+  v_IchiroSuzukiPriceText: {fileID: 449012604}
+  v_IchiroSuzukiLevelText: {fileID: 14818108}
   v_IchiroSuzukiLevel: 0
   v_IchiroSuzukiPrice: 10
   v_IchiroSuzukiRate: 0
-  v_AlexRodriguezPriceText: {fileID: 0}
-  v_AlexRodriguezLevelText: {fileID: 0}
+  v_AlexRodriguezPriceText: {fileID: 354189451}
+  v_AlexRodriguezLevelText: {fileID: 261529991}
   v_AlexRodriguezLevel: 0
   v_AlexRodriguezPrice: 10
   v_AlexRodriguezRate: 0
-  v_StephCurryPriceText: {fileID: 0}
-  v_StephCurryLevelText: {fileID: 0}
+  v_StephCurryPriceText: {fileID: 1365754243}
+  v_StephCurryLevelText: {fileID: 498538698}
   v_StephCurryLevel: 0
   v_StephCurryPrice: 10
   v_StephCurryRate: 0
-  v_JamesHardenPriceText: {fileID: 0}
-  v_JamesHardenLevelText: {fileID: 0}
+  v_JamesHardenPriceText: {fileID: 899517610}
+  v_JamesHardenLevelText: {fileID: 1739244803}
   v_JamesHardenLevel: 0
   v_JamesHardenPrice: 10
   v_JamesHardenRate: 0
-  v_DirkNowitzskiPriceText: {fileID: 0}
-  v_DirkNowitzskiLevelText: {fileID: 0}
+  v_DirkNowitzskiPriceText: {fileID: 180774447}
+  v_DirkNowitzskiLevelText: {fileID: 1052933392}
   v_DirkNowitzskiLevel: 0
   v_DirkNowitzskiPrice: 10
   v_DirkNowitzskiRate: 0
-  v_ChristianRonaldoPriceText: {fileID: 0}
-  v_ChristianRonaldoLevelText: {fileID: 0}
+  v_ChristianRonaldoPriceText: {fileID: 2075532970}
+  v_ChristianRonaldoLevelText: {fileID: 2016036400}
   v_ChristianRonaldoLevel: 0
   v_ChristianRonaldoPrice: 10
   v_ChristianRonaldoRate: 0
-  v_LionelMessiPriceText: {fileID: 0}
-  v_LionelMessiLevelText: {fileID: 0}
+  v_LionelMessiPriceText: {fileID: 1531069853}
+  v_LionelMessiLevelText: {fileID: 2090451809}
   v_LionelMessiLevel: 0
   v_LionelMessiPrice: 10
   v_LionelMessiRate: 0
-  v_NeymarPriceText: {fileID: 0}
-  v_NeymarLevelText: {fileID: 0}
+  v_NeymarPriceText: {fileID: 1126064394}
+  v_NeymarLevelText: {fileID: 2018102843}
   v_NeymarLevel: 0
   v_NeymarPrice: 10
   v_NeymarRate: 0
@@ -10395,7 +10465,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33338335240db475d8dad4301e87a967, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f2d754861d8604385bccc2589780a9fe, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -11130,7 +11200,7 @@ RectTransform:
   - {fileID: 1742740449}
   - {fileID: 439401638}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -12410,7 +12480,7 @@ RectTransform:
   - {fileID: 1865329533}
   - {fileID: 2017266286}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -13236,7 +13306,7 @@ RectTransform:
   - {fileID: 2074772917}
   - {fileID: 2100870592}
   m_Father: {fileID: 1568519025}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}

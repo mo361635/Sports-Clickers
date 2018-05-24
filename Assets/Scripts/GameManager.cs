@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager singleton;
     public float m_Points;
     public Text m_Counter;
+    public Text OpenCloseShopButton;
 
     public List<GameObject> m_Icons;
 
@@ -354,8 +355,24 @@ public class GameManager : MonoBehaviour {
             float points = 0;
             points += v_TomBradyRate;
 			points += v_CamNewtonRate;
+            points += v_DakPrescottRate;
+
             points += v_TigerWoodsRate;
             points += v_JordanSpiethRate;
+            points += v_PhilMickelsonRate;
+
+            points += v_DirkNowitzskiRate;
+            points += v_JamesHardenRate;
+            points += v_StephCurryRate;
+
+            points += v_AlexRodriguezRate;
+            points += v_IchiroSuzukiRate;
+            points += v_JoshHamiltonRate;
+
+            points += v_ChristianRonaldoRate;
+            points += v_LionelMessiRate;
+            points += v_NeymarRate;
+
             m_Points += points;
             yield return new WaitForSeconds(1f);
         }
@@ -370,33 +387,44 @@ public class GameManager : MonoBehaviour {
             m_SoccerMenu.SetActive(false);
             m_BaseballMenu.SetActive(false);
             m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
+            OpenCloseShopButton.text = "Close";
         }else{
             m_ShopMenu.SetActive(!m_ShopMenu.activeInHierarchy);
+            if(m_ShopMenu.activeInHierarchy){
+                OpenCloseShopButton.text = "Close";
+            }else{
+                OpenCloseShopButton.text = "Shop";
+            }
         }   
     }
 
     public void OpenFootballMenu(){
         m_FootballMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
+        OpenCloseShopButton.text = "Back";
     }
 
     public void OpenGolfMenu(){
         m_GolfMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
+        OpenCloseShopButton.text = "Back";
     }
 
     public void OpenBasketballMenu(){
         m_BasketballMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
+        OpenCloseShopButton.text = "Back";
     }
 
     public void OpenSoccerMenu(){
         m_SoccerMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
+        OpenCloseShopButton.text = "Back";
     }
 
     public void OpenBaseballMenu(){
         m_BaseballMenu.SetActive(true);
         m_ShopMenu.SetActive(false);
+        OpenCloseShopButton.text = "Back";
     }
 }
