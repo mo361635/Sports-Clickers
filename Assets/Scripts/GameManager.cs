@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
     public float m_Points;
     public Text m_Counter;
     public Text OpenCloseShopButton;
+    public Text Rate;
 
     public List<GameObject> m_Icons;
 
@@ -55,13 +56,13 @@ public class GameManager : MonoBehaviour {
 	{
         m_Counter.text = "points : " + m_Points;
 
-        if(m_Points >= 50000){
+        if(m_Points >= 1000000){
             m_YouWinScreen.SetActive(true);
         }
 	}
 
 	public void AddPoint(){
-        m_Points++;
+        m_Points += PointsAClick;
         SpawnRandomIcon();
     }
 
@@ -360,6 +361,24 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+    public int ClickLevel = 0;
+    public int PointsAClick = 1;
+    public int clickprice = 10;
+
+    public Text ClickUpgradeText;
+
+    public void ClickUpgrade(){
+        if(m_Points >= clickprice){
+            clickprice += 10;
+            PointsAClick += 50;
+            m_Points -= clickprice;
+            ClickLevel++;
+            ClickUpgradeText.text = "Click Level : " + ClickLevel + "\n"
+                + PointsAClick + " points a click" + "\n"
+                + "Price : " + clickprice;
+        }
+    }
+
     public IEnumerator EarnPoints(){
         while(true){
             float points = 0;
@@ -384,6 +403,7 @@ public class GameManager : MonoBehaviour {
             points += v_NeymarRate;
 
             m_Points += points;
+            Rate.text = points + " / sec";
             yield return new WaitForSeconds(1f);
         }
     }
