@@ -1226,7 +1226,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 20'
 --- !u!222 &176834077
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1314,7 +1314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 240'
 --- !u!222 &180774448
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2504,7 +2504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 40'
 --- !u!222 &354189452
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2854,7 +2854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 120'
 --- !u!222 &373156845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3718,7 +3718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 80'
 --- !u!222 &449012605
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5435,7 +5435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 60'
 --- !u!222 &762025526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5664,7 +5664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 20'
 --- !u!222 &786591382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6287,7 +6287,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 160'
 --- !u!222 &899517611
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8248,7 +8248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 320'
 --- !u!222 &1126064395
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8798,7 +8798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 30'
 --- !u!222 &1241450579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9500,7 +9500,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 80'
 --- !u!222 &1365754244
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9841,7 +9841,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 40'
 --- !u!222 &1446302318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10104,7 +10104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 480'
 --- !u!222 &1531069854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14240,7 +14240,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 134866806}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0
+  m_Size: 0.73492813
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15291,7 +15291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price : 10'
+  m_Text: 'Price : 160'
 --- !u!222 &2075532971
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour {
 	{
         m_Counter.text = "points : " + m_Points;
 
-        if(m_Points >= 100){
+        if(m_Points >= 50000){
             m_YouWinScreen.SetActive(true);
         }
 	}
@@ -101,15 +101,15 @@ public class GameManager : MonoBehaviour {
 	public Text v_CamNewtonPriceText;
 	public Text v_CamNewtonLevelText;
 	public float v_CamNewtonLevel;
-	public float v_CamNewtonPrice = 10;
+	public float v_CamNewtonPrice = 20;
 	public int v_CamNewtonRate = 0;
 
 	public void BuyCamNewton(){
 		if(m_Points >= v_CamNewtonPrice){
 			m_Points -= v_CamNewtonPrice;
-			v_CamNewtonPrice += 10;
+			v_CamNewtonPrice += 20;
 			v_CamNewtonLevel++;
-			v_CamNewtonRate++;
+			v_CamNewtonRate+= 3;
 			v_CamNewtonPriceText.text = "Price : " + v_CamNewtonPrice;
 			v_CamNewtonLevelText.text = "Level : " + v_CamNewtonLevel;
 		}
@@ -118,15 +118,15 @@ public class GameManager : MonoBehaviour {
 	public Text v_DakPrescottPriceText;
 	public Text v_DakPrescottLevelText;
 	public float v_DakPrescottLevel;
-	public float v_DakPrescottPrice = 10;
+	public float v_DakPrescottPrice = 30;
 	public int v_DakPrescottRate = 0;
 
 	public void BuyDakPrescott(){
 		if(m_Points >= v_DakPrescottPrice){
 			m_Points -= v_DakPrescottPrice;
-			v_DakPrescottPrice += 10;
+			v_DakPrescottPrice += 30;
 			v_DakPrescottLevel++;
-			v_DakPrescottRate++;
+			v_DakPrescottRate+= 5;
 			v_DakPrescottPriceText.text = "Price : " + v_DakPrescottPrice;
 			v_DakPrescottLevelText.text = "Level : " + v_DakPrescottLevel;
 		}
@@ -135,7 +135,7 @@ public class GameManager : MonoBehaviour {
     public Text v_TigerWoodsPriceText;
     public Text v_TigerWoodsLevelText;
     public float v_TigerWoodsLevel;
-    public float v_TigerWoodsPrice = 10;
+    public float v_TigerWoodsPrice = 20;
     public int v_TigerWoodsRate = 0;
 
     public void BuyTigerWoods()
@@ -143,9 +143,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_TigerWoodsPrice)
         {
             m_Points -= v_TigerWoodsPrice;
-            v_TigerWoodsPrice += 10;
+            v_TigerWoodsPrice += 20;
             v_TigerWoodsLevel++;
-            v_TigerWoodsRate++;
+            v_TigerWoodsRate+= 2;
             v_TigerWoodsPriceText.text = "Price : " + v_TigerWoodsPrice;
             v_TigerWoodsLevelText.text = "Level : " + v_TigerWoodsLevel;
         }
@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour {
     public Text v_JordanSpiethPriceText;
     public Text v_JordanSpiethLevelText;
     public float v_JordanSpiethLevel;
-    public float v_JordanSpiethPrice = 10;
+    public float v_JordanSpiethPrice = 40;
     public int v_JordanSpiethRate = 0;
 
     public void BuyJordanSpieth()
@@ -162,9 +162,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_JordanSpiethPrice)
         {
             m_Points -= v_JordanSpiethPrice;
-            v_JordanSpiethPrice += 10;
+            v_JordanSpiethPrice += 40;
             v_JordanSpiethLevel++;
-            v_JordanSpiethRate++;
+            v_JordanSpiethRate+= 6;
             v_JordanSpiethPriceText.text = "Price : " + v_JordanSpiethPrice;
             v_JordanSpiethLevelText.text = "Level : " + v_JordanSpiethLevel;
         }
@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_PhilMickelsonPriceText;
 	public Text v_PhilMickelsonLevelText;
 	public float v_PhilMickelsonLevel;
-	public float v_PhilMickelsonPrice = 10;
+	public float v_PhilMickelsonPrice = 60;
 	public int v_PhilMickelsonRate = 0;
 
 	public void BuyPhilMickelson()
@@ -181,9 +181,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_PhilMickelsonPrice)
 		{
 			m_Points -= v_PhilMickelsonPrice;
-			v_PhilMickelsonPrice += 10;
+			v_PhilMickelsonPrice += 60;
 			v_PhilMickelsonLevel++;
-			v_PhilMickelsonRate++;
+			v_PhilMickelsonRate+= 10;
 			v_PhilMickelsonPriceText.text = "Price : " + v_PhilMickelsonPrice;
 			v_PhilMickelsonLevelText.text = "Level : " + v_PhilMickelsonLevel;
 		}
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour {
     public Text v_JoshHamiltonPriceText;
     public Text v_JoshHamiltonLevelText;
     public float v_JoshHamiltonLevel;
-    public float v_JoshHamiltonPrice = 10;
+    public float v_JoshHamiltonPrice = 120;
     public int v_JoshHamiltonRate = 0;
 
     public void BuyJoshHamilton()
@@ -200,9 +200,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_JoshHamiltonPrice)
         {
             m_Points -= v_JoshHamiltonPrice;
-            v_JoshHamiltonPrice += 10;
+            v_JoshHamiltonPrice += 120;
             v_JoshHamiltonLevel++;
-            v_JoshHamiltonRate++;
+            v_JoshHamiltonRate+= 20;
             v_JoshHamiltonPriceText.text = "Price : " + v_JoshHamiltonPrice;
             v_JoshHamiltonLevelText.text = "Level : " + v_JoshHamiltonLevel;
         }
@@ -211,7 +211,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_IchiroSuzukiPriceText;
 	public Text v_IchiroSuzukiLevelText;
 	public float v_IchiroSuzukiLevel;
-	public float v_IchiroSuzukiPrice = 10;
+	public float v_IchiroSuzukiPrice = 80;
 	public int v_IchiroSuzukiRate = 0;
 
 	public void BuyIchiroSuzuki()
@@ -219,9 +219,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_IchiroSuzukiPrice)
 		{
 			m_Points -= v_IchiroSuzukiPrice;
-			v_IchiroSuzukiPrice += 10;
+			v_IchiroSuzukiPrice += 80;
 			v_IchiroSuzukiLevel++;
-			v_IchiroSuzukiRate++;
+			v_IchiroSuzukiRate+= 12;
 			v_IchiroSuzukiPriceText.text = "Price : " + v_IchiroSuzukiPrice;
 			v_IchiroSuzukiLevelText.text = "Level : " + v_IchiroSuzukiLevel;
 		}
@@ -230,7 +230,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_AlexRodriguezPriceText;
 	public Text v_AlexRodriguezLevelText;
 	public float v_AlexRodriguezLevel;
-	public float v_AlexRodriguezPrice = 10;
+	public float v_AlexRodriguezPrice = 40;
 	public int v_AlexRodriguezRate = 0;
 
 	public void BuyAlexRodriguez()
@@ -238,9 +238,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_AlexRodriguezPrice)
 		{
 			m_Points -= v_AlexRodriguezPrice;
-			v_AlexRodriguezPrice += 10;
+			v_AlexRodriguezPrice += 40;
 			v_AlexRodriguezLevel++;
-			v_AlexRodriguezRate++;
+			v_AlexRodriguezRate+= 4;
 			v_AlexRodriguezPriceText.text = "Price : " + v_AlexRodriguezPrice;
 			v_AlexRodriguezLevelText.text = "Level : " + v_AlexRodriguezLevel;
 		}
@@ -249,7 +249,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_StephCurryPriceText;
 	public Text v_StephCurryLevelText;
 	public float v_StephCurryLevel;
-	public float v_StephCurryPrice = 10;
+	public float v_StephCurryPrice = 80;
 	public int v_StephCurryRate = 0;
 
 	public void BuyStephCurry()
@@ -257,9 +257,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_StephCurryPrice)
 		{
 			m_Points -= v_StephCurryPrice;
-			v_StephCurryPrice += 10;
+			v_StephCurryPrice += 80;
 			v_StephCurryLevel++;
-			v_StephCurryRate++;
+			v_StephCurryRate+= 8;
 			v_StephCurryPriceText.text = "Price : " + v_StephCurryPrice;
 			v_StephCurryLevelText.text = "Level : " + v_StephCurryLevel;
 		}
@@ -268,7 +268,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_JamesHardenPriceText;
 	public Text v_JamesHardenLevelText;
 	public float v_JamesHardenLevel;
-	public float v_JamesHardenPrice = 10;
+	public float v_JamesHardenPrice = 160;
 	public int v_JamesHardenRate = 0;
 
 	public void BuyJamesHarden()
@@ -276,9 +276,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_JamesHardenPrice)
 		{
 			m_Points -= v_JamesHardenPrice;
-			v_JamesHardenPrice += 10;
+			v_JamesHardenPrice += 160;
 			v_JamesHardenLevel++;
-			v_JamesHardenRate++;
+			v_JamesHardenRate+= 24;
 			v_JamesHardenPriceText.text = "Price : " + v_JamesHardenPrice;
 			v_JamesHardenLevelText.text = "Level : " + v_JamesHardenLevel;
 		}
@@ -287,7 +287,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_DirkNowitzskiPriceText;
 	public Text v_DirkNowitzskiLevelText;
 	public float v_DirkNowitzskiLevel;
-	public float v_DirkNowitzskiPrice = 10;
+	public float v_DirkNowitzskiPrice = 240;
 	public int v_DirkNowitzskiRate = 0;
 
 	public void BuyDirkNowitzski()
@@ -295,9 +295,9 @@ public class GameManager : MonoBehaviour {
 		if (m_Points >= v_DirkNowitzskiPrice)
 		{
 			m_Points -= v_DirkNowitzskiPrice;
-			v_DirkNowitzskiPrice += 10;
+			v_DirkNowitzskiPrice += 240;
 			v_DirkNowitzskiLevel++;
-			v_DirkNowitzskiRate++;
+			v_DirkNowitzskiRate+= 40;
 			v_DirkNowitzskiPriceText.text = "Price : " + v_DirkNowitzskiPrice;
 			v_DirkNowitzskiLevelText.text = "Level : " + v_DirkNowitzskiLevel;
 		}
@@ -306,7 +306,7 @@ public class GameManager : MonoBehaviour {
 	public Text v_ChristianRonaldoPriceText;
     public Text v_ChristianRonaldoLevelText;
     public float v_ChristianRonaldoLevel;
-    public float v_ChristianRonaldoPrice = 10;
+    public float v_ChristianRonaldoPrice = 160;
     public int v_ChristianRonaldoRate = 0;
 
     public void BuyChristianRonaldo()
@@ -314,9 +314,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_ChristianRonaldoPrice)
 		{
             m_Points -= v_ChristianRonaldoPrice;
-            v_ChristianRonaldoPrice += 10;
+            v_ChristianRonaldoPrice += 160;
             v_ChristianRonaldoLevel++;
-            v_ChristianRonaldoRate++;
+            v_ChristianRonaldoRate+= 16;
             v_ChristianRonaldoPriceText.text = "Price : " + v_ChristianRonaldoPrice;
             v_ChristianRonaldoLevelText.text = "Level : " + v_ChristianRonaldoLevel;
 		}
@@ -325,7 +325,7 @@ public class GameManager : MonoBehaviour {
     public Text v_LionelMessiPriceText;
     public Text v_LionelMessiLevelText;
     public float v_LionelMessiLevel;
-    public float v_LionelMessiPrice = 10;
+    public float v_LionelMessiPrice = 480;
     public int v_LionelMessiRate = 0;
 
     public void BuyLionelMessi()
@@ -333,9 +333,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_LionelMessiPrice)
 		{
             m_Points -= v_LionelMessiPrice;
-            v_LionelMessiPrice += 10;
+            v_LionelMessiPrice += 480;
             v_LionelMessiLevel++;
-            v_LionelMessiRate++;
+            v_LionelMessiRate+= 80;
             v_LionelMessiPriceText.text = "Price : " + v_LionelMessiPrice;
             v_LionelMessiLevelText.text = "Level : " + v_LionelMessiLevel;
 		}
@@ -344,7 +344,7 @@ public class GameManager : MonoBehaviour {
     public Text v_NeymarPriceText;
     public Text v_NeymarLevelText;
     public float v_NeymarLevel;
-    public float v_NeymarPrice = 10;
+    public float v_NeymarPrice = 320;
     public int v_NeymarRate = 0;
 
 	public void BuyNeymar()
@@ -352,9 +352,9 @@ public class GameManager : MonoBehaviour {
         if (m_Points >= v_NeymarPrice)
 		{
             m_Points -= v_NeymarPrice;
-            v_NeymarPrice += 10;
+            v_NeymarPrice += 320;
             v_NeymarLevel++;
-            v_NeymarRate++;
+            v_NeymarRate+= 48;
             v_NeymarPriceText.text = "Price : " + v_NeymarPrice;
             v_NeymarLevelText.text = "Level : " + v_NeymarLevel;
 		}
