@@ -369,9 +369,9 @@ public class GameManager : MonoBehaviour {
 
     public void ClickUpgrade(){
         if(m_Points >= clickprice){
-            clickprice += 10;
             PointsAClick += 1;
             m_Points -= clickprice;
+            clickprice += 10;
             ClickLevel++;
             ClickUpgradeText.text = "Click Level : " + ClickLevel + "\n"
                 + PointsAClick + " points a click" + "\n"
