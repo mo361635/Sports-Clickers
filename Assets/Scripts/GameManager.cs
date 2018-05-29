@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour {
 	{
         m_Counter.text = "points : " + m_Points;
 
-        if(m_Points >= 1000000){
+        if(m_Points >= 250000){
             m_YouWinScreen.SetActive(true);
         }
 	}
@@ -370,7 +370,7 @@ public class GameManager : MonoBehaviour {
     public void ClickUpgrade(){
         if(m_Points >= clickprice){
             clickprice += 10;
-            PointsAClick += 50;
+            PointsAClick += 1;
             m_Points -= clickprice;
             ClickLevel++;
             ClickUpgradeText.text = "Click Level : " + ClickLevel + "\n"
